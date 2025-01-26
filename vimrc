@@ -21,13 +21,14 @@ function SetMappings()
   map <silent> <leader>[ <C-n> :LspPreviousDiagnostic<CR>
 
   map <silent> <leader>ca :LspCodeAction<CR>
+  map <silent> <leader>gd :LspDefinition<CR>
+
   map <silent> <c-b> :NERDTreeToggle<CR>
 
   imap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
   imap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<Esc>"
   imap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
 
-  map <silent> <leader>gd :LspDefinition<CR>
 
   " Exit terminal insert mode with <Esc>
   tnoremap <Esc> <C-\><C-n>
@@ -64,11 +65,3 @@ call plug#begin()
   Plug 'github/copilot.vim'
   Plug 'ryanoasis/vim-devicons'
 call plug#end()
-
-if executable('clangd')
-    let g:lsp_settings = {
-    \   'clangd': {
-    \       'cmd': ['clangd', '--std=c++latest'],
-    \   }
-    \}
-endif
