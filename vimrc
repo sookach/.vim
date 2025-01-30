@@ -37,7 +37,7 @@ function SetMappings()
   " Keybinding to toggle the terminal
   nnoremap <leader>tt :Ttoggle<CR>
 
-  map <Leader>dd :call vimspector#Launch()<CR>
+  map <Leader>ds :call vimspector#Launch()<CR>
   map <Leader>de :call vimspector#Reset()<CR>
   map <Leader>dc :call vimspector#Continue()<CR>
 
