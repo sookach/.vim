@@ -44,7 +44,7 @@ function SetMappings()
   map <Leader>dt :call vimspector#ToggleBreakpoint()<CR>
   map <Leader>dT :call vimspector#ClearBreakpoints()<CR>
 
-  map <Leader>dh <Plug>VimspectorRestart
+  map <Leader>dr <Plug>VimspectorRestart
   map <Leader>dj <Plug>VimspectorStepOver
   map <Leader>dk <Plug>VimspectorStepInto
   map <Leader>dl <Plug>VimspectorStepOut
