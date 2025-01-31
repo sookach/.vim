@@ -64,4 +64,11 @@ call plug#begin()
   Plug 'LunarWatcher/auto-pairs'
   Plug 'github/copilot.vim'
   Plug 'ryanoasis/vim-devicons'
+  Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 call plug#end()
+
+set termguicolors
+colorscheme catppuccin_macchiato
+autocmd VimEnter * highlight Normal guibg=#222222
+
+autocmd BufReadPost,BufNewFile * :Copilot disable
