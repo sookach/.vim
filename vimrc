@@ -68,5 +68,19 @@ call plug#end()
 
 set termguicolors
 colorscheme zaibatsu
+" override the completion popup colors:
+" Use a dark, but slightly different, background for the popup so it stands out.
+highlight Pmenu     guibg=#1e1e2e guifg=#c0caf5
+highlight PmenuExtra     guibg=#1e1e2e guifg=#c0caf5
+highlight PmenuKind     guibg=#1e1e2e guifg=#c0caf5
+
+" Use a subtle accent for the selected item.
+highlight PmenuSel  guibg=#2e2e3e guifg=#ffffff
+
+" For the scrollbar, use colors that match the theme’s dark background.
+highlight PmenuSbar guibg=#1a1a24
+highlight PmenuThumb guibg=#3d3d4e
+
+highlight LspWarningText guibg=#1e1e2e guifg=#c0caf5
 
 autocmd BufReadPost,BufNewFile * :Copilot disable
