@@ -67,6 +67,6 @@ call plug#begin()
 call plug#end()
 
 set termguicolors
-colorscheme slate
+colorscheme zaibatsu
 
 autocmd BufReadPost,BufNewFile * :Copilot disable
