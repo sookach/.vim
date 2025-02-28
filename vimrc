@@ -62,7 +62,6 @@ call plug#begin()
   Plug 'kassio/neoterm'
   Plug 'puremourning/vimspector'
   Plug 'LunarWatcher/auto-pairs'
-  Plug 'github/copilot.vim'
   Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
@@ -82,5 +81,3 @@ highlight PmenuSbar guibg=#1a1a24
 highlight PmenuThumb guibg=#3d3d4e
 
 highlight LspWarningText guibg=#1e1e2e guifg=#c0caf5
-
-autocmd BufReadPost,BufNewFile * :Copilot disable
